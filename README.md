@@ -1,12 +1,35 @@
-# Devcontainer for Python Package Development
+# cloudyds
 
-When loaded, please run:
+[![PyPI](https://img.shields.io/pypi/v/cloudyds.svg)](https://pypi.org/project/cloudyds/)
+[![Tests](https://github.com/coatless/cloudyds/actions/workflows/test.yml/badge.svg)](https://github.com/coatless/cloudyds/actions/workflows/test.yml)
+[![Changelog](https://img.shields.io/github/v/release/coatless/cloudyds?include_prereleases&label=changelog)](https://github.com/coatless/cloudyds/releases)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/coatless/cloudyds/blob/main/LICENSE)
 
-```sh
-cookiecutter gh:simonw/python-lib
+Setup DS Environments in the Cloud
+
+## Installation
+
+Install this library using `pip`:
+```bash
+pip install cloudyds
 ```
+## Usage
 
-This uses Simon Willison's [`python-lib` cookiecutter template](https://github.com/simonw/python-lib) to create the Python package skeleton.
+Usage instructions go here.
 
-- https://til.simonwillison.net/python/pyproject
-- https://github.com/simonw/python-lib
+## Development
+
+To contribute to this library, first checkout the code. Then create a new virtual environment:
+```bash
+cd cloudyds
+python -m venv venv
+source venv/bin/activate
+```
+Now install the dependencies and test dependencies:
+```bash
+pip install -e '.[test]'
+```
+To run the tests:
+```bash
+pytest
+```
